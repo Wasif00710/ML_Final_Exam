@@ -2,7 +2,7 @@ import gradio as gr
 import pandas as pd
 import pickle
 
-# Load Loan model
+
 with open("best_model_loan.pkl", "rb") as f:
     model = pickle.load(f)
 
@@ -48,3 +48,4 @@ app = gr.Interface(
 )
 
 app.launch(share=True)
+
